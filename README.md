@@ -1,1 +1,1 @@
-# hekix-config
+# helix-config
