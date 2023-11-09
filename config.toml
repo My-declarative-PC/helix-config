@@ -11,3 +11,15 @@ auto-save = true
 render = true
 character = "┆"
 skip-levels = 1
+
+[editor.lsp]
+display-messages = true
+
+[keys.normal]
+X = "extend_line_above"
+D = "delete_char_backward"
+
+[editor.statusline]
+mode.normal = "󰫻"
+mode.insert = "󱂈"
+mode.select = "󱎤"
