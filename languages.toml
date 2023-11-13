@@ -1,3 +1,15 @@
+[language-server.typos]
+command = "typos-lsp"
+
+[[language]]
+name = "php"
+language-servers = [ "intelephense", "typos" ]
+
 [[language]]
 name = "javascript"
+language-servers = [ "typescript-language-server", "typos" ]
 indent = { tab-width = 4, unit = "    " }
+
+[[language]]
+name = "git-commit"
+language-servers = [ "typos" ]
