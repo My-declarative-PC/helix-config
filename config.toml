@@ -6,6 +6,7 @@ bufferline = "multiple"
 color-modes = true
 rulers = [100]
 auto-save = true
+true-color = true
 
 [editor.indent-guides]
 render = true
