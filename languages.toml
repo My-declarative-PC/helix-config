@@ -6,32 +6,51 @@ command = "sql-language-server"
 args = ["up", "--method", "stdio"]
 
 
+##### Language: DOCKERFILE #####
 [[language]]
 name = "dockerfile"
 language-servers = [ "docker-langserver", "typos" ]
 
+##### Language: PHP #####
 [[language]]
 name = "php"
 language-servers = [ "intelephense", "typos" ]
 
+[language.debugger]
+name = "php"
+transport = "stdio"
+command = "node"
+args = ["/var/home/timofey/gits/vscode-php-debug/out/phpDebug.js"]
+
+[[language.debugger.templates]]
+name = "source"
+request = "launch"
+completion = [ { name = "entrypoint", completion = "filename"} ]
+args = { mode = "debug", program = "{0}" }
+
+##### Language: SQL #####
 [[language]]
 name = "sql"
 language-servers = [ "sql-language-server", "typos" ]
 
+##### Language: BASH #####
 [[language]]
 name = "bash"
 language-servers = [ "bash-language-server", "typos" ]
 
+##### Language: JAVASCRIPT #####
 [[language]]
 name = "javascript"
 language-servers = [ "typescript-language-server", "typos" ]
 indent = { tab-width = 4, unit = "    " }
 
+##### Language: CSS #####
 [[language]]
 name = "css"
 language-servers = [ "vscode-css-language-server", "typos" ]
 indent = { tab-width = 4, unit = "    " }
 
+##### Language: GIT-COMMIT #####
 [[language]]
 name = "git-commit"
 language-servers = [ "typos" ]

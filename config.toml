@@ -21,6 +21,10 @@ X = "extend_line_above"
 D = "delete_char_backward"
 F3 = [":fmt", ":wa"]
 F4 = ":pipe sort"
+A-u = "switch_to_uppercase"
+A-l = "switch_to_lowercase"
+F12 = ":config-open"
+A-F12 = ":open ~/.config/helix/languages.toml"
 
 [editor.statusline]
 mode.normal = "󰫻"
