@@ -5,6 +5,24 @@ command = "typos-lsp"
 command = "sql-language-server"
 args = ["up", "--method", "stdio"]
 
+[language-server.ltex-ls.config]
+ltex.enabled = true
+completionEnabled = true
+ltex.statusBarItem = true
+ltex.language = "en-US"
+ltex.dictionary = { "en-US" = ["builtin"], "ru-RU" = ["builtin"] }
+ltex.disabledRules = { "en-US" = ["UPPERCASE_SENTENCE_START"], "ru-RU" = ["UPPERCASE_SENTENCE_START"] }
+
+[language-server.helix-snippets-ls]
+command = "helix-snippets-ls"
+args = ["--stdio"]
+
+
+
+##### Language: MARKDOWN #####
+[[language]]
+name = "markdown"
+language-servers = [ "ltex-ls" ]
 
 ##### Language: DOCKERFILE #####
 [[language]]
@@ -14,7 +32,16 @@ language-servers = [ "docker-langserver", "typos" ]
 ##### Language: PHP #####
 [[language]]
 name = "php"
-language-servers = [ "intelephense", "typos" ]
+language-servers = [ "intelephense", "typos", "helix-snippets-ls" ]
+
+[language.auto-pairs]
+"'" = "'"
+'<' = '>'
+'(' = ')'
+'{' = '}'
+'[' = ']'
+'`' = '`'
+'"' = '"'
 
 [language.debugger]
 name = "php"
