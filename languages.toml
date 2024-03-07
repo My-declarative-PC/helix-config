@@ -7,11 +7,10 @@ args = ["up", "--method", "stdio"]
 
 [language-server.ltex-ls.config]
 ltex.enabled = true
-completionEnabled = true
+ltex.completionEnabled = true
 ltex.statusBarItem = true
-ltex.language = "en-US"
-ltex.dictionary = { "en-US" = ["builtin"], "ru-RU" = ["builtin"] }
-ltex.disabledRules = { "en-US" = ["UPPERCASE_SENTENCE_START"], "ru-RU" = ["UPPERCASE_SENTENCE_START"] }
+ltex.language = "ru-RU"
+ltex.dictionary = { "ru-RU" = ["builtin"] }
 
 [language-server.helix-snippets-ls]
 command = "helix-snippets-ls"
@@ -80,4 +79,4 @@ indent = { tab-width = 4, unit = "    " }
 ##### Language: GIT-COMMIT #####
 [[language]]
 name = "git-commit"
-language-servers = [ "typos" ]
+language-servers = [ "typos", "ltex-ls" ]
