@@ -7,6 +7,8 @@ color-modes = true
 rulers = [100]
 auto-save = true
 true-color = true
+popup-border = "all"
+indent-heuristic = "tree-sitter"
 
 [editor.indent-guides]
 render = true
@@ -28,6 +30,29 @@ F12 = ":config-open"
 A-F12 = ":open ~/.config/helix/languages.toml"
 
 [editor.statusline]
+left = [
+  "mode",
+  "spacer",
+  "separator",
+  "version-control",
+  "separator",
+  "read-only-indicator",
+  "file-modification-indicator"
+]
+center = [ "spinner", "file-name", "spinner" ]
+right = [
+  "diagnostics",
+  "selections",
+  "register",
+  "file-encoding",
+  "separator",
+  "position",
+  "separator",
+  "spacer",
+  "position-percentage",
+  "spacer",
+  "mode"
+]
 mode.normal = "󰫻"
 mode.insert = "󱂈"
 mode.select = "󱎤"
