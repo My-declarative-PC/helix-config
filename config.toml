@@ -9,6 +9,7 @@ auto-save = true
 true-color = true
 popup-border = "all"
 indent-heuristic = "tree-sitter"
+jump-label-alphabet = "fjdkslaruvmeicwox"
 
 [editor.indent-guides]
 render = true
