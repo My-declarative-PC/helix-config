@@ -27,6 +27,7 @@ language-servers = [ "ltex-ls" ]
 [[language]]
 name = "dockerfile"
 language-servers = [ "docker-langserver", "typos" ]
+indent = { tab-width = 4, unit = "    " }
 
 ##### Language: PHP #####
 [[language]]
