@@ -47,7 +47,7 @@ language-servers = [ "intelephense", "typos", "helix-snippets-ls" ]
 name = "php"
 transport = "stdio"
 command = "node"
-args = ["/var/home/timofey/gits/vscode-php-debug/out/phpDebug.js"]
+args = ["~/gits/vscode-php-debug/out/phpDebug.js"]
 
 [[language.debugger.templates]]
 name = "source"
