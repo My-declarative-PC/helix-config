@@ -20,6 +20,9 @@ skip-levels = 1
 [editor.lsp]
 display-messages = true
 
+[editor.soft-wrap]
+enable = true
+
 [keys.normal]
 Y = ":yank-join"
 X = "extend_line_above"
