@@ -32,6 +32,7 @@ indent = { tab-width = 4, unit = "    " }
 ##### Language: PHP #####
 [[language]]
 name = "php"
+auto-format = true
 language-servers = [ "intelephense", "typos", "helix-snippets-ls" ]
 
 [language.auto-pairs]
@@ -81,3 +82,9 @@ indent = { tab-width = 4, unit = "    " }
 [[language]]
 name = "git-commit"
 language-servers = [ "typos", "ltex-ls" ]
+
+##### Language: PYTHON #####
+[[language]]
+name = "python"
+formatter = { command = "black", args = ["-q", "-"] }
+auto-format = true
