@@ -18,8 +18,19 @@ args = ["--stdio"]
 
 [language-server.gpt]
 command = "helix-gpt"
-args = [ "--handler", "ollama", "--ollamaModel", "deepseek-r1:1.5b", "--ollamaEndpoint", "http://172.20.7.20:11434", "--logFile", "/tmp/gpt-helix-gpt.log" ]
-
+args = [
+  "--logFile",        "/tmp/gpt-helix-gpt.log",
+  "--handler",        "ollama",
+  "--ollamaModel",    "deepseek-r1:1.5b",
+  "--ollamaEndpoint", "http://127.0.0.1:11434",
+]
+# args = [
+#   "--logFile",        "/tmp/gpt-helix-gpt.log",
+#   "--handler",        "openai",
+#   "--openaiModel",    "deepseek-r1:1.5b",
+#   "--openaiEndpoint", "http://127.0.0.1:11434/v1/completions",
+#   "--openaiKey",      "some"
+# ]
 
 ##### Language: MARKDOWN #####
 [[language]]
