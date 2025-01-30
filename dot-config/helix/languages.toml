@@ -16,6 +16,9 @@ ltex.dictionary = { "ru-RU" = ["builtin"] }
 command = "helix-snippets-ls"
 args = ["--stdio"]
 
+[language-server.gpt]
+command = "helix-gpt"
+args = [ "--handler", "ollama", "--ollamaModel", "deepseek-r1:1.5b", "--ollamaEndpoint", "http://172.20.7.20:11434", "--logFile", "/tmp/gpt-helix-gpt.log" ]
 
 
 ##### Language: MARKDOWN #####
@@ -33,7 +36,7 @@ indent = { tab-width = 4, unit = "    " }
 [[language]]
 name = "php"
 auto-format = true
-language-servers = [ "intelephense", "typos", "helix-snippets-ls" ]
+language-servers = [ "intelephense", "typos", "helix-snippets-ls", "gpt" ]
 
 [language.auto-pairs]
 "'" = "'"
