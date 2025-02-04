@@ -12,6 +12,7 @@ indent-heuristic = "tree-sitter"
 jump-label-alphabet = "fjdkslaruvmeicwox"
 default-line-ending = "lf"
 end-of-line-diagnostics = "hint"
+shell = ["fish", "-c"]
 
 [editor.inline-diagnostics]
 cursor-line = "warning"
