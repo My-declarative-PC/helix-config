@@ -42,24 +42,18 @@ args = [
 ##
 #
 
-#
-##
-### Languages settings
-##
-#
-
-##### Language: MARKDOWN #####
+### MARKDOWN
 [[language]]
 name = "markdown"
 language-servers = [ "ltex-ls" ]
 
-##### Language: DOCKERFILE #####
+### DOCKERFILE
 [[language]]
 name = "dockerfile"
 language-servers = [ "docker-langserver", "typos" ]
 indent = { tab-width = 4, unit = "    " }
 
-##### Language: PHP #####
+### PHP
 [[language]]
 name = "php"
 auto-format = true
@@ -88,34 +82,34 @@ request = "launch"
 completion = [ { name = "entrypoint", completion = "filename"} ]
 args = { mode = "debug", program = "{0}" }
 
-##### Language: SQL #####
+### SQL
 [[language]]
 name = "sql"
 language-servers = [ "sql-language-server", "typos" ]
 
-##### Language: BASH #####
+### BASH
 [[language]]
 name = "bash"
 language-servers = [ "bash-language-server", "typos" ]
 
-##### Language: JAVASCRIPT #####
+### JAVASCRIPT
 [[language]]
 name = "javascript"
 language-servers = [ "typescript-language-server", "typos" ]
 indent = { tab-width = 4, unit = "    " }
 
-##### Language: CSS #####
+### CSS
 [[language]]
 name = "css"
 language-servers = [ "vscode-css-language-server", "typos" ]
 indent = { tab-width = 4, unit = "    " }
 
-##### Language: GIT-COMMIT #####
+### GIT
 [[language]]
 name = "git-commit"
 language-servers = [ "typos", "ltex-ls" ]
 
-##### Language: PYTHON #####
+### PYTHON
 [[language]]
 name = "python"
 formatter = { command = "black", args = ["-q", "-"] }
