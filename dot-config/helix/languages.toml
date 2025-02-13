@@ -26,6 +26,10 @@ ltex.dictionary = { "ru-RU" = ["builtin"] }
 command = "helix-snippets-ls"
 args = ["--stdio"]
 
+### phpactor
+[language-server.phpactor]
+command = "phpactor"
+args = ["language-server"]
 
 #
 ##
@@ -48,7 +52,7 @@ indent = { tab-width = 4, unit = "    " }
 [[language]]
 name = "php"
 auto-format = true
-language-servers = [ "intelephense", "typos", "helix-snippets-ls" ]
+language-servers = [ "phpactor", "typos", "helix-snippets-ls" ]
 
 [language.auto-pairs]
 "'" = "'"
