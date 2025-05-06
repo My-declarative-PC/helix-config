@@ -99,6 +99,11 @@ name = "css"
 language-servers = [ "vscode-css-language-server", "typos" ]
 indent = { tab-width = 4, unit = "    " }
 
+##### Language: HTML #####
+[[language]]
+name = "html"
+indent = { tab-width = 4, unit = "    " }
+
 ##### Language: GIT-COMMIT #####
 [[language]]
 name = "git-commit"
