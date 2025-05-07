@@ -87,6 +87,12 @@ name = "javascript"
 language-servers = [ "typescript-language-server", "typos" ]
 indent = { tab-width = 4, unit = "    " }
 
+##### Language: TYPESCRIPT #####
+[[language]]
+name = "typescript"
+language-servers = [ "typescript-language-server", "typos" ]
+indent = { tab-width = 4, unit = "    " }
+
 ##### Language: JSON #####
 [[language]]
 name = "json"
@@ -96,6 +102,12 @@ indent = { tab-width = 4, unit = "    " }
 ##### Language: CSS #####
 [[language]]
 name = "css"
+language-servers = [ "vscode-css-language-server", "typos" ]
+indent = { tab-width = 4, unit = "    " }
+
+##### Language: SCSS #####
+[[language]]
+name = "scss"
 language-servers = [ "vscode-css-language-server", "typos" ]
 indent = { tab-width = 4, unit = "    " }
 
