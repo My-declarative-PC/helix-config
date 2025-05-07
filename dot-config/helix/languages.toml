@@ -98,13 +98,36 @@ name = "javascript"
 language-servers = [ "typescript-language-server", "typos" ]
 indent = { tab-width = 4, unit = "    " }
 
-### CSS
+##### Language: TYPESCRIPT #####
+[[language]]
+name = "typescript"
+language-servers = [ "typescript-language-server", "typos" ]
+indent = { tab-width = 4, unit = "    " }
+
+##### Language: JSON #####
+[[language]]
+name = "json"
+file-types = ["jsonc", "json"]
+indent = { tab-width = 4, unit = "    " }
+
+##### Language: CSS #####
 [[language]]
 name = "css"
 language-servers = [ "vscode-css-language-server", "typos" ]
 indent = { tab-width = 4, unit = "    " }
 
-### GIT
+##### Language: SCSS #####
+[[language]]
+name = "scss"
+language-servers = [ "vscode-css-language-server", "typos" ]
+indent = { tab-width = 4, unit = "    " }
+
+##### Language: HTML #####
+[[language]]
+name = "html"
+indent = { tab-width = 4, unit = "    " }
+
+##### Language: GIT-COMMIT #####
 [[language]]
 name = "git-commit"
 language-servers = [ "typos", "ltex-ls" ]
@@ -113,4 +136,17 @@ language-servers = [ "typos", "ltex-ls" ]
 [[language]]
 name = "python"
 formatter = { command = "black", args = ["-q", "-"] }
+auto-format = true
+
+##### Language: YAML #####
+[[language]]
+name = "yaml"
+formatter = { command = "prettierd", args = [".yaml"] }
+auto-format = true
+
+##### Language: BASH #####
+[[language]]
+name = "bash"
+indent = { tab-width = 4, unit = "    " }
+formatter = { command = 'shfmt', args = ["-i", "4"] }
 auto-format = true
