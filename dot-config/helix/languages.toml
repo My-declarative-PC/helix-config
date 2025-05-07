@@ -32,8 +32,9 @@ command = "helix-gpt"
 args = [
   "--logFile",        "/tmp/gpt-helix-gpt.log",
   "--handler",        "openai",
-  "--openaiModel",    "deepseek-chat",
-  "--openaiEndpoint", "https://api.deepseek.com/v1",
+  "--openaiModel",    "gpt://***/yandexgpt/latest",
+  "--openaiEndpoint", "https://llm.api.cloud.yandex.net/v1/",
+  "--openaiKey",      "***",
 ]
 
 #
@@ -57,9 +58,9 @@ indent = { tab-width = 4, unit = "    " }
 [[language]]
 name = "php"
 auto-format = true
-# language-servers = [ "intelephense", "typos", "helix-snippets-ls", "lsp-ai" ]
+language-servers = [ "intelephense", "typos", "helix-snippets-ls", "gpt" ]
 # language-servers = [ "lsp-ai" ]
-language-servers = [ "gpt" ]
+# language-servers = [ "gpt" ]
 
 [language.auto-pairs]
 "'" = "'"
